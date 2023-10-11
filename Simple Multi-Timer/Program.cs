@@ -5,8 +5,8 @@ namespace Simple_Multi_Timer
         [STAThread]
         static void Main()
         {
-            //ApplicationConfiguration.Initialize();
-            //Application.Run(new Form1());
+            ApplicationConfiguration.Initialize();
+            Application.Run(new MainWindow());
         }
     }
 }
