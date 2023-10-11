@@ -15,6 +15,7 @@ namespace Simple_Multi_Timer
         public TimerSettingsForm()
         {
             InitializeComponent();
+            errorLabel.Text = "";
         }
     }
 }
