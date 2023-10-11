@@ -19,7 +19,7 @@ namespace Simple_Multi_Timer
 
         private void addTimerButton_Click(object sender, EventArgs e)
         {
-
+            new TimerSettingsForm().ShowDialog();
         }
     }
 }
