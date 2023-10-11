@@ -14,6 +14,24 @@
             return name;
         }
 
+        public TimerItemStates GetState()
+        {
+            return state;
+        }
+
+        public int getSeconds()
+        {
+            return seconds;
+        }
+        public int getMinutes()
+        {
+            return minutes;
+        }
+        public int getHours()
+        {
+            return hours;
+        }
+
         public TimerItem(string name, int hours, int minutes, int seconds)
         {
             SetTime(hours, minutes, seconds);

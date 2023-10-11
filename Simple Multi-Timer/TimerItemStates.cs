@@ -1,6 +1,6 @@
 ﻿namespace Simple_Multi_Timer
 {
-    enum TimerItemStates
+    public enum TimerItemStates
     {
         IsRunning,
         IsPaused,

@@ -69,6 +69,7 @@
             PauseResumeButton.TabIndex = 2;
             PauseResumeButton.Text = "R";
             PauseResumeButton.UseVisualStyleBackColor = true;
+            PauseResumeButton.Click += PauseResumeButton_Click;
             // 
             // DeleteButton
             // 
@@ -82,6 +83,7 @@
             DeleteButton.TabIndex = 10;
             DeleteButton.Text = "D";
             DeleteButton.UseVisualStyleBackColor = true;
+            DeleteButton.Click += DeleteButton_Click;
             // 
             // EditButton
             // 
@@ -95,6 +97,7 @@
             EditButton.TabIndex = 11;
             EditButton.Text = "E";
             EditButton.UseVisualStyleBackColor = true;
+            EditButton.Click += EditButton_Click;
             // 
             // ResetButton
             // 
@@ -108,6 +111,7 @@
             ResetButton.TabIndex = 12;
             ResetButton.Text = "R";
             ResetButton.UseVisualStyleBackColor = true;
+            ResetButton.Click += ResetButton_Click;
             // 
             // TimerItemView
             // 
