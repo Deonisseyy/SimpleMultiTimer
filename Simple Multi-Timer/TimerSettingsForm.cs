@@ -17,5 +17,10 @@ namespace Simple_Multi_Timer
             InitializeComponent();
             errorLabel.Text = "";
         }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

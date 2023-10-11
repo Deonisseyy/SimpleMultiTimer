@@ -94,6 +94,17 @@
             secondsLabel.TabIndex = 3;
             secondsLabel.Text = "Seconds";
             // 
+            // nameLabel
+            // 
+            nameLabel.AutoSize = true;
+            nameLabel.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            nameLabel.ForeColor = Color.White;
+            nameLabel.Location = new Point(12, 9);
+            nameLabel.Name = "nameLabel";
+            nameLabel.Size = new Size(183, 37);
+            nameLabel.TabIndex = 8;
+            nameLabel.Text = "Timer settings";
+            // 
             // timerNameTextBox
             // 
             timerNameTextBox.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -129,17 +140,6 @@
             secondsUpDown.Size = new Size(120, 33);
             secondsUpDown.TabIndex = 7;
             // 
-            // nameLabel
-            // 
-            nameLabel.AutoSize = true;
-            nameLabel.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            nameLabel.ForeColor = Color.White;
-            nameLabel.Location = new Point(12, 9);
-            nameLabel.Name = "nameLabel";
-            nameLabel.Size = new Size(183, 37);
-            nameLabel.TabIndex = 8;
-            nameLabel.Text = "Timer settings";
-            // 
             // saveButton
             // 
             saveButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
@@ -163,6 +163,7 @@
             CancelButton.TabIndex = 10;
             CancelButton.Text = "Cancel";
             CancelButton.UseVisualStyleBackColor = true;
+            CancelButton.Click += CancelButton_Click;
             // 
             // errorLabel
             // 
@@ -176,7 +177,7 @@
             errorLabel.TabIndex = 11;
             errorLabel.Text = "Error label";
             // 
-            // TimerEditorForm
+            // TimerSettingsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -194,7 +195,7 @@
             Controls.Add(minutesLabel);
             Controls.Add(hoursLabel);
             Controls.Add(timerNameLabel);
-            Name = "TimerEditorForm";
+            Name = "TimerSettingsForm";
             Text = "Timer settings";
             ((System.ComponentModel.ISupportInitialize)hoursUpDown).EndInit();
             ((System.ComponentModel.ISupportInitialize)minutesUpDown).EndInit();
