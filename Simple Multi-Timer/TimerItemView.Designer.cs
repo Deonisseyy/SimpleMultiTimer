@@ -77,7 +77,7 @@
             DeleteButton.AutoSize = true;
             DeleteButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             DeleteButton.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            DeleteButton.Location = new Point(346, 30);
+            DeleteButton.Location = new Point(431, 30);
             DeleteButton.Name = "DeleteButton";
             DeleteButton.Size = new Size(35, 35);
             DeleteButton.TabIndex = 10;
@@ -91,7 +91,7 @@
             EditButton.AutoSize = true;
             EditButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             EditButton.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            EditButton.Location = new Point(308, 30);
+            EditButton.Location = new Point(393, 30);
             EditButton.Name = "EditButton";
             EditButton.Size = new Size(32, 35);
             EditButton.TabIndex = 11;
@@ -105,7 +105,7 @@
             ResetButton.AutoSize = true;
             ResetButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ResetButton.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            ResetButton.Location = new Point(269, 30);
+            ResetButton.Location = new Point(354, 30);
             ResetButton.Name = "ResetButton";
             ResetButton.Size = new Size(33, 35);
             ResetButton.TabIndex = 12;
@@ -118,6 +118,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.FromArgb(38, 32, 40);
             Controls.Add(ResetButton);
             Controls.Add(EditButton);
@@ -126,7 +127,7 @@
             Controls.Add(PauseResumeButton);
             Controls.Add(timerNameLabel);
             Name = "TimerItemView";
-            Size = new Size(384, 84);
+            Size = new Size(469, 73);
             Paint += TimerItemView_Paint;
             ResumeLayout(false);
             PerformLayout();
