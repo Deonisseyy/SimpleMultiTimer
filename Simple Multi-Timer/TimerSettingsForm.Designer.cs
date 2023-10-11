@@ -195,7 +195,10 @@
             Controls.Add(minutesLabel);
             Controls.Add(hoursLabel);
             Controls.Add(timerNameLabel);
+            MaximumSize = new Size(384, 320);
+            MinimumSize = new Size(384, 320);
             Name = "TimerSettingsForm";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Timer settings";
             ((System.ComponentModel.ISupportInitialize)hoursUpDown).EndInit();
             ((System.ComponentModel.ISupportInitialize)minutesUpDown).EndInit();
