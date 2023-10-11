@@ -94,12 +94,12 @@
         {
             int mills = this.milliseconds / 1000;
             int currentTimeData = mills % 60;
-            string result = currentTimeData.ToString();
+            string result = currentTimeData.ToString().PadLeft(2, '0');
             mills /= 60;
             currentTimeData = mills % 60;
-            result = currentTimeData.ToString() + ":" + result;
+            result = currentTimeData.ToString().PadLeft(2, '0') + ":" + result;
             currentTimeData = mills /= 60;
-            result = currentTimeData.ToString() + ":" + result;
+            result = currentTimeData.ToString().PadLeft(2, '0') + ":" + result;
             return result;
         }
     }
