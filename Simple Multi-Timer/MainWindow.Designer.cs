@@ -85,6 +85,8 @@
             ClientSize = new Size(496, 601);
             Controls.Add(timersContainerPanel);
             Controls.Add(topPanel);
+            MaximumSize = new Size(512, 640);
+            MinimumSize = new Size(512, 640);
             Name = "MainWindow";
             Text = "Simple Multi Timer";
             topPanel.ResumeLayout(false);
