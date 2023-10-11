@@ -151,6 +151,7 @@
             saveButton.TabIndex = 9;
             saveButton.Text = "Save";
             saveButton.UseVisualStyleBackColor = true;
+            saveButton.Click += saveButton_Click;
             // 
             // CancelButton
             // 

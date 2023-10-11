@@ -51,5 +51,12 @@ namespace Simple_Multi_Timer
         {
             timers.RemoveAt(index);
         }
+
+        public int Remove(TimerItem timer)
+        {
+            int index = timers.IndexOf(timer);
+            timers.Remove(timer);
+            return index;
+        }
     }
 }

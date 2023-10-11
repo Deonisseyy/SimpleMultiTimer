@@ -4,6 +4,9 @@
     <Compile Update="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="TimerItemView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="TimerSettingsForm.cs">
       <SubType>Form</SubType>
     </Compile>
