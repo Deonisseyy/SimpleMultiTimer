@@ -72,6 +72,7 @@
             // timersContainerPanel
             // 
             timersContainerPanel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            timersContainerPanel.AutoScroll = true;
             timersContainerPanel.Location = new Point(12, 58);
             timersContainerPanel.Name = "timersContainerPanel";
             timersContainerPanel.Size = new Size(472, 531);
