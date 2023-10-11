@@ -1,0 +1,15 @@
+D:\MY PC\[Projects]\Simple Multi-Timer\Simple Multi-Timer\bin\Debug\net6.0-windows\Simple Multi-Timer.exe
+D:\MY PC\[Projects]\Simple Multi-Timer\Simple Multi-Timer\bin\Debug\net6.0-windows\Simple Multi-Timer.deps.json
+D:\MY PC\[Projects]\Simple Multi-Timer\Simple Multi-Timer\bin\Debug\net6.0-windows\Simple Multi-Timer.runtimeconfig.json
+D:\MY PC\[Projects]\Simple Multi-Timer\Simple Multi-Timer\bin\Debug\net6.0-windows\Simple Multi-Timer.dll
+D:\MY PC\[Projects]\Simple Multi-Timer\Simple Multi-Timer\bin\Debug\net6.0-windows\Simple Multi-Timer.pdb
+D:\MY PC\[Projects]\Simple Multi-Timer\Simple Multi-Timer\obj\Debug\net6.0-windows\Simple Multi-Timer.csproj.AssemblyReference.cache
+D:\MY PC\[Projects]\Simple Multi-Timer\Simple Multi-Timer\obj\Debug\net6.0-windows\Simple Multi-Timer.GeneratedMSBuildEditorConfig.editorconfig
+D:\MY PC\[Projects]\Simple Multi-Timer\Simple Multi-Timer\obj\Debug\net6.0-windows\Simple Multi-Timer.AssemblyInfoInputs.cache
+D:\MY PC\[Projects]\Simple Multi-Timer\Simple Multi-Timer\obj\Debug\net6.0-windows\Simple Multi-Timer.AssemblyInfo.cs
+D:\MY PC\[Projects]\Simple Multi-Timer\Simple Multi-Timer\obj\Debug\net6.0-windows\Simple Multi-Timer.csproj.CoreCompileInputs.cache
+D:\MY PC\[Projects]\Simple Multi-Timer\Simple Multi-Timer\obj\Debug\net6.0-windows\Simple Multi-Timer.dll
+D:\MY PC\[Projects]\Simple Multi-Timer\Simple Multi-Timer\obj\Debug\net6.0-windows\refint\Simple Multi-Timer.dll
+D:\MY PC\[Projects]\Simple Multi-Timer\Simple Multi-Timer\obj\Debug\net6.0-windows\Simple Multi-Timer.pdb
+D:\MY PC\[Projects]\Simple Multi-Timer\Simple Multi-Timer\obj\Debug\net6.0-windows\Simple Multi-Timer.genruntimeconfig.cache
+D:\MY PC\[Projects]\Simple Multi-Timer\Simple Multi-Timer\obj\Debug\net6.0-windows\ref\Simple Multi-Timer.dll
