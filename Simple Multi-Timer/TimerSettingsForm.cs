@@ -25,10 +25,10 @@ namespace Simple_Multi_Timer
             InitializeComponent();
             errorLabel.Text = "";
             this.timer = timer;
-            timerNameLabel.Text = timer.GetName();
-            hoursUpDown.Value = timer.getHours();
-            minutesUpDown.Value = timer.getMinutes();
-            hoursUpDown.Value = timer.getSeconds();
+            timerNameTextBox.Text = timer.GetName();
+            hoursUpDown.Value = Convert.ToDecimal(timer.getHours());
+            minutesUpDown.Value = Convert.ToDecimal(timer.getMinutes());
+            secondsUpDown.Value = Convert.ToDecimal(timer.getSeconds());
         }
 
         public TimerSettingsForm(MainWindow window)
@@ -64,6 +64,7 @@ namespace Simple_Multi_Timer
                 int hours = Convert.ToInt32(hoursUpDown.Value);
                 window.AddTimer(new TimerItem(name, hours, minutes, seconds));
             }
+            Close();
         }
     }
 }
