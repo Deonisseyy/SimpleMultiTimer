@@ -127,6 +127,7 @@
             Controls.Add(timerNameLabel);
             Name = "TimerItemView";
             Size = new Size(384, 84);
+            Paint += TimerItemView_Paint;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -13,6 +13,7 @@ namespace Simple_Multi_Timer
     public partial class TimerItemView : UserControl
     {
         private TimerItem timer;
+        private MainWindow owner;
 
         public TimerItemView(TimerItem timer)
         {
@@ -20,6 +21,11 @@ namespace Simple_Multi_Timer
             this.timer = timer;
             timerNameLabel.Text = timer.GetName();
             timerTimeLabel.Text = timer.GetTimeString();
+        }
+
+        public void SetOwner(MainWindow owner)
+        {
+            this.owner = owner;
         }
 
         private void PauseResumeButton_Click(object sender, EventArgs e)
@@ -54,7 +60,13 @@ namespace Simple_Multi_Timer
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            
+            owner.RemoveTimer(timer);
+        }
+
+        private void TimerItemView_Paint(object sender, PaintEventArgs e)
+        {
+            timerNameLabel.Text = timer.GetName();
+            timerTimeLabel.Text = timer.GetTimeString();
         }
     }
 }

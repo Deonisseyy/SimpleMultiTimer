@@ -18,12 +18,22 @@ namespace Simple_Multi_Timer
         {
             InitializeComponent();
             timerManager = new TimerManager();
+            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+            timer.Interval = 100;
+            timer.Tick += Timer_Tick;
+            timer.Start();
+        }
+
+        private void Timer_Tick(object? sender, EventArgs e)
+        {
+            this.Refresh();
         }
 
         public void AddTimer(TimerItem timer)
         {
             timerManager.Add(timer);
             TimerItemView timerItemViev = new TimerItemView(timer);
+            timerItemViev.SetOwner(this);
             timersContainerPanel.Controls.Add(timerItemViev);
         }
 
