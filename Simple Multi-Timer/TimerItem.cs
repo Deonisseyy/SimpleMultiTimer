@@ -39,6 +39,7 @@
 
         public TimerItem(string name, int hours, int minutes, int seconds)
         {
+            this.name = name;
             SetTime(hours, minutes, seconds);
             Reset();
         }
