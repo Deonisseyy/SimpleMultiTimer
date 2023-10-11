@@ -1,6 +1,6 @@
 ﻿namespace Simple_Multi_Timer
 {
-    internal class TimerItem
+    public class TimerItem
     {
         private string name = "";
         private TimerItemStates state;
@@ -8,6 +8,11 @@
         private int minutes;
         private int hours;
         private int milliseconds;
+
+        public string GetName()
+        {
+            return name;
+        }
 
         public TimerItem(string name, int hours, int minutes, int seconds)
         {
