@@ -117,7 +117,7 @@
             // 
             hoursUpDown.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             hoursUpDown.Location = new Point(132, 93);
-            hoursUpDown.Maximum = new decimal(new int[] { 1024, 0, 0, 0 });
+            hoursUpDown.Maximum = new decimal(new int[] { 512, 0, 0, 0 });
             hoursUpDown.Name = "hoursUpDown";
             hoursUpDown.Size = new Size(120, 33);
             hoursUpDown.TabIndex = 5;
