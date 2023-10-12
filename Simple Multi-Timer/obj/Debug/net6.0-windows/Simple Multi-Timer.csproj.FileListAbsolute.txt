@@ -17,3 +17,4 @@ D:\MY PC\[Projects]\Simple Multi-Timer\Simple Multi-Timer\obj\Debug\net6.0-windo
 D:\MY PC\[Projects]\Simple Multi-Timer\Simple Multi-Timer\obj\Debug\net6.0-windows\Simple_Multi_Timer.TimerSettingsForm.resources
 D:\MY PC\[Projects]\Simple Multi-Timer\Simple Multi-Timer\obj\Debug\net6.0-windows\Simple Multi-Timer.csproj.GenerateResource.cache
 D:\MY PC\[Projects]\Simple Multi-Timer\Simple Multi-Timer\obj\Debug\net6.0-windows\Simple_Multi_Timer.TimerItemView.resources
+D:\MY PC\[Projects]\Simple Multi-Timer\Simple Multi-Timer\obj\Debug\net6.0-windows\Simple_Multi_Timer.Properties.Resources.resources

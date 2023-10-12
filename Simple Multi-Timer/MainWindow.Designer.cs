@@ -60,13 +60,16 @@
             // addTimerButton
             // 
             addTimerButton.Anchor = AnchorStyles.Right;
+            addTimerButton.BackColor = Color.FromArgb(128, 255, 128);
+            addTimerButton.FlatAppearance.BorderSize = 0;
+            addTimerButton.FlatStyle = FlatStyle.Flat;
             addTimerButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            addTimerButton.Location = new Point(394, 3);
+            addTimerButton.Image = Properties.Resources.plus;
+            addTimerButton.Location = new Point(435, 3);
             addTimerButton.Name = "addTimerButton";
-            addTimerButton.Size = new Size(75, 34);
+            addTimerButton.Size = new Size(34, 34);
             addTimerButton.TabIndex = 1;
-            addTimerButton.Text = "Add";
-            addTimerButton.UseVisualStyleBackColor = true;
+            addTimerButton.UseVisualStyleBackColor = false;
             addTimerButton.Click += addTimerButton_Click;
             // 
             // timersContainerPanel
