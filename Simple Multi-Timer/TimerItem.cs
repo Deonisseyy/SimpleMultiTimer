@@ -76,8 +76,8 @@
             this.milliseconds -= milliseconds;
             if (this.milliseconds <= 0)
             {
-                this.milliseconds = 0;
-                this.state = TimerItemStates.IsFinished;
+                SetMilliseconds();
+                this.state = TimerItemStates.IsReady;
             }
         }
 
