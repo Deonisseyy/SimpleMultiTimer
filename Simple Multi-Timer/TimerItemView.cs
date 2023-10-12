@@ -14,6 +14,8 @@ namespace Simple_Multi_Timer
     {
         private TimerItem timer;
         private MainWindow owner;
+        private Color activeColor = Color.White;
+        private Color inactiveColor = Color.FromArgb(127, 127, 127);
 
         public TimerItemView(TimerItem timer)
         {
@@ -71,15 +73,19 @@ namespace Simple_Multi_Timer
             {
                 case TimerItemStates.IsRunning:
                     PauseResumeButton.Image = Properties.Resources.pause;
+                    timerTimeLabel.ForeColor = activeColor;
                     break;
                 case TimerItemStates.IsReady:
                     PauseResumeButton.Image = Properties.Resources.play;
+                    timerTimeLabel.ForeColor = inactiveColor;
                     break;
                 case TimerItemStates.IsPaused:
                     PauseResumeButton.Image = Properties.Resources.play;
+                    timerTimeLabel.ForeColor = activeColor;
                     break;
                 case TimerItemStates.IsFinished:
                     PauseResumeButton.Image = Properties.Resources.play;
+                    timerTimeLabel.ForeColor = inactiveColor;
                     break;
             }
         }
