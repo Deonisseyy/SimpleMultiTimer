@@ -62,13 +62,15 @@
             // 
             PauseResumeButton.AutoSize = true;
             PauseResumeButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            PauseResumeButton.BackColor = Color.FromArgb(128, 255, 128);
+            PauseResumeButton.FlatStyle = FlatStyle.Flat;
             PauseResumeButton.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            PauseResumeButton.Location = new Point(3, 35);
+            PauseResumeButton.Image = Properties.Resources.play;
+            PauseResumeButton.Location = new Point(3, 30);
             PauseResumeButton.Name = "PauseResumeButton";
-            PauseResumeButton.Size = new Size(33, 35);
+            PauseResumeButton.Size = new Size(32, 32);
             PauseResumeButton.TabIndex = 2;
-            PauseResumeButton.Text = "R";
-            PauseResumeButton.UseVisualStyleBackColor = true;
+            PauseResumeButton.UseVisualStyleBackColor = false;
             PauseResumeButton.Click += PauseResumeButton_Click;
             // 
             // DeleteButton
@@ -76,13 +78,15 @@
             DeleteButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             DeleteButton.AutoSize = true;
             DeleteButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            DeleteButton.BackColor = Color.FromArgb(255, 128, 128);
+            DeleteButton.FlatStyle = FlatStyle.Flat;
             DeleteButton.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            DeleteButton.Location = new Point(428, 30);
+            DeleteButton.Image = Properties.Resources.trash;
+            DeleteButton.Location = new Point(431, 30);
             DeleteButton.Name = "DeleteButton";
-            DeleteButton.Size = new Size(35, 35);
+            DeleteButton.Size = new Size(32, 32);
             DeleteButton.TabIndex = 10;
-            DeleteButton.Text = "D";
-            DeleteButton.UseVisualStyleBackColor = true;
+            DeleteButton.UseVisualStyleBackColor = false;
             DeleteButton.Click += DeleteButton_Click;
             // 
             // EditButton
@@ -90,13 +94,15 @@
             EditButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             EditButton.AutoSize = true;
             EditButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            EditButton.BackColor = Color.FromArgb(128, 255, 128);
+            EditButton.FlatStyle = FlatStyle.Flat;
             EditButton.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            EditButton.Location = new Point(390, 30);
+            EditButton.Image = Properties.Resources.pencil;
+            EditButton.Location = new Point(393, 30);
             EditButton.Name = "EditButton";
-            EditButton.Size = new Size(32, 35);
+            EditButton.Size = new Size(32, 32);
             EditButton.TabIndex = 11;
-            EditButton.Text = "E";
-            EditButton.UseVisualStyleBackColor = true;
+            EditButton.UseVisualStyleBackColor = false;
             EditButton.Click += EditButton_Click;
             // 
             // ResetButton
@@ -104,13 +110,15 @@
             ResetButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             ResetButton.AutoSize = true;
             ResetButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            ResetButton.BackColor = Color.FromArgb(128, 255, 128);
+            ResetButton.FlatStyle = FlatStyle.Flat;
             ResetButton.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            ResetButton.Location = new Point(351, 30);
+            ResetButton.Image = Properties.Resources.reset;
+            ResetButton.Location = new Point(355, 30);
             ResetButton.Name = "ResetButton";
-            ResetButton.Size = new Size(33, 35);
+            ResetButton.Size = new Size(32, 32);
             ResetButton.TabIndex = 12;
-            ResetButton.Text = "R";
-            ResetButton.UseVisualStyleBackColor = true;
+            ResetButton.UseVisualStyleBackColor = false;
             ResetButton.Click += ResetButton_Click;
             // 
             // TimerItemView
@@ -127,7 +135,7 @@
             Controls.Add(PauseResumeButton);
             Controls.Add(timerNameLabel);
             Name = "TimerItemView";
-            Size = new Size(466, 73);
+            Size = new Size(466, 67);
             Paint += TimerItemView_Paint;
             ResumeLayout(false);
             PerformLayout();

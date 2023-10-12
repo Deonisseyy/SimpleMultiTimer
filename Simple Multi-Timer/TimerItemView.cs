@@ -67,6 +67,21 @@ namespace Simple_Multi_Timer
         {
             timerNameLabel.Text = timer.GetName();
             timerTimeLabel.Text = timer.GetTimeString();
+            switch (timer.GetState())
+            {
+                case TimerItemStates.IsRunning:
+                    PauseResumeButton.Image = Properties.Resources.pause;
+                    break;
+                case TimerItemStates.IsReady:
+                    PauseResumeButton.Image = Properties.Resources.play;
+                    break;
+                case TimerItemStates.IsPaused:
+                    PauseResumeButton.Image = Properties.Resources.play;
+                    break;
+                case TimerItemStates.IsFinished:
+                    PauseResumeButton.Image = Properties.Resources.play;
+                    break;
+            }
         }
     }
 }
