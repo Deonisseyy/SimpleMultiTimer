@@ -144,26 +144,32 @@
             // 
             saveButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             saveButton.AutoSize = true;
+            saveButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            saveButton.BackColor = Color.FromArgb(128, 255, 128);
+            saveButton.FlatStyle = FlatStyle.Flat;
             saveButton.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            saveButton.Location = new Point(12, 234);
+            saveButton.Image = Properties.Resources.check;
+            saveButton.Location = new Point(12, 237);
             saveButton.Name = "saveButton";
-            saveButton.Size = new Size(88, 35);
+            saveButton.Size = new Size(32, 32);
             saveButton.TabIndex = 9;
-            saveButton.Text = "Save";
-            saveButton.UseVisualStyleBackColor = true;
+            saveButton.UseVisualStyleBackColor = false;
             saveButton.Click += saveButton_Click;
             // 
             // CancelButton
             // 
             CancelButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             CancelButton.AutoSize = true;
+            CancelButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            CancelButton.BackColor = Color.FromArgb(255, 128, 128);
+            CancelButton.FlatStyle = FlatStyle.Flat;
             CancelButton.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            CancelButton.Location = new Point(268, 234);
+            CancelButton.Image = Properties.Resources.cross;
+            CancelButton.Location = new Point(324, 237);
             CancelButton.Name = "CancelButton";
-            CancelButton.Size = new Size(88, 35);
+            CancelButton.Size = new Size(32, 32);
             CancelButton.TabIndex = 10;
-            CancelButton.Text = "Cancel";
-            CancelButton.UseVisualStyleBackColor = true;
+            CancelButton.UseVisualStyleBackColor = false;
             CancelButton.Click += CancelButton_Click;
             // 
             // errorLabel
@@ -172,7 +178,7 @@
             errorLabel.AutoSize = true;
             errorLabel.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             errorLabel.ForeColor = Color.FromArgb(255, 128, 128);
-            errorLabel.Location = new Point(12, 206);
+            errorLabel.Location = new Point(12, 209);
             errorLabel.Name = "errorLabel";
             errorLabel.Size = new Size(100, 25);
             errorLabel.TabIndex = 11;
