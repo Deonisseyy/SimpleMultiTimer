@@ -121,6 +121,8 @@
             hoursUpDown.Name = "hoursUpDown";
             hoursUpDown.Size = new Size(120, 33);
             hoursUpDown.TabIndex = 5;
+            hoursUpDown.ValueChanged += VerifyValues;
+            hoursUpDown.TextChanged += VerifyValues;
             // 
             // minutesUpDown
             // 
@@ -130,6 +132,8 @@
             minutesUpDown.Name = "minutesUpDown";
             minutesUpDown.Size = new Size(120, 33);
             minutesUpDown.TabIndex = 6;
+            minutesUpDown.ValueChanged += VerifyValues;
+            minutesUpDown.TextChanged += VerifyValues;
             // 
             // secondsUpDown
             // 
@@ -139,6 +143,8 @@
             secondsUpDown.Name = "secondsUpDown";
             secondsUpDown.Size = new Size(120, 33);
             secondsUpDown.TabIndex = 7;
+            secondsUpDown.ValueChanged += VerifyValues;
+            secondsUpDown.TextChanged += VerifyValues;
             // 
             // saveButton
             // 
