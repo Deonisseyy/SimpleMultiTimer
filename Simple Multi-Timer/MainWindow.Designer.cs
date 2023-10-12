@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             Label nameLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             topPanel = new Panel();
             addTimerButton = new Button();
             timersContainerPanel = new FlowLayoutPanel();
+            trayIcon = new NotifyIcon(components);
             nameLabel = new Label();
             topPanel.SuspendLayout();
             SuspendLayout();
@@ -81,6 +84,13 @@
             timersContainerPanel.Size = new Size(472, 531);
             timersContainerPanel.TabIndex = 1;
             // 
+            // trayIcon
+            // 
+            trayIcon.Icon = (Icon)resources.GetObject("trayIcon.Icon");
+            trayIcon.Text = "Simple Multi Timer";
+            trayIcon.Visible = true;
+            trayIcon.Click += trayIcon_Click;
+            // 
             // MainWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -93,6 +103,7 @@
             MinimumSize = new Size(512, 640);
             Name = "MainWindow";
             Text = "Simple Multi Timer";
+            Resize += MainWindow_Resize;
             topPanel.ResumeLayout(false);
             topPanel.PerformLayout();
             ResumeLayout(false);
@@ -103,5 +114,6 @@
         private Panel topPanel;
         private Button addTimerButton;
         private FlowLayoutPanel timersContainerPanel;
+        private NotifyIcon trayIcon;
     }
 }

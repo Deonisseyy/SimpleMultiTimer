@@ -47,5 +47,21 @@ namespace Simple_Multi_Timer
         {
             new TimerSettingsForm(this).ShowDialog();
         }
+
+        private void MainWindow_Resize(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Minimized)
+            {
+                trayIcon.Visible = true;
+                this.Hide();
+            }
+        }
+
+        private void trayIcon_Click(object sender, EventArgs e)
+        {
+            this.Show();
+            trayIcon.Visible = false;
+            this.WindowState = FormWindowState.Normal;
+        }
     }
 }
