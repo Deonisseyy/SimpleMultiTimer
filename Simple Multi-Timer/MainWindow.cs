@@ -17,6 +17,7 @@ namespace Simple_Multi_Timer
         public MainWindow()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.icon;
             timerManager = new TimerManager();
             System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
             timer.Interval = 100;

@@ -86,7 +86,7 @@
             // 
             // trayIcon
             // 
-            trayIcon.Icon = (Icon)resources.GetObject("trayIcon.Icon");
+            trayIcon.Icon = Properties.Resources.icon;
             trayIcon.Text = "Simple Multi Timer";
             trayIcon.Click += trayIcon_Click;
             // 
