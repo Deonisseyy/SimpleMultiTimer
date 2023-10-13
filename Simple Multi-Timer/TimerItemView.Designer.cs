@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TimerItemView));
             timerTimeLabel = new Label();
             timerNameLabel = new Label();
             PauseResumeButton = new Button();
             DeleteButton = new Button();
             EditButton = new Button();
             ResetButton = new Button();
+            notifyIcon = new NotifyIcon(components);
             SuspendLayout();
             // 
             // timerTimeLabel
@@ -121,6 +124,12 @@
             ResetButton.UseVisualStyleBackColor = false;
             ResetButton.Click += ResetButton_Click;
             // 
+            // notifyIcon
+            // 
+            notifyIcon.BalloonTipIcon = ToolTipIcon.Info;
+            notifyIcon.Icon = (Icon)resources.GetObject("notifyIcon.Icon");
+            notifyIcon.Text = "notifyIcon";
+            // 
             // TimerItemView
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -149,5 +158,6 @@
         private Button EditButton;
         private Button ResetButton;
         private Label timerTimeLabel;
+        private NotifyIcon notifyIcon;
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace Simple_Multi_Timer
+﻿using System.Windows.Forms;
+
+namespace Simple_Multi_Timer
 {
     public partial class TimerItemView : UserControl
     {
@@ -13,6 +15,7 @@
             this.timer = timer;
             timerNameLabel.Text = timer.GetName();
             timerTimeLabel.Text = timer.GetTimeString();
+            timer.TimerElapsed += NotifyUser;
         }
 
         public void SetOwner(MainWindow owner)
@@ -78,6 +81,15 @@
                     timerTimeLabel.ForeColor = inactiveColor;
                     break;
             }
+        }
+
+        private void NotifyUser(object sender, EventArgs e)
+        {
+            notifyIcon.Visible = true;
+            notifyIcon.BalloonTipTitle = "Simple Multi Timer";
+            notifyIcon.BalloonTipText = "Timer " + timer.GetName() + " has finished.";
+            notifyIcon.ShowBalloonTip(5000);
+            notifyIcon.Visible = false;
         }
     }
 }

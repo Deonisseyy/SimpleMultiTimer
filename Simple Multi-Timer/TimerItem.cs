@@ -8,6 +8,7 @@
         private int minutes;
         private int hours;
         private int milliseconds;
+        public event EventHandler TimerElapsed;
 
         public void SetName(string name)
         {
@@ -76,6 +77,7 @@
             this.milliseconds -= milliseconds;
             if (this.milliseconds <= 0)
             {
+                TimerElapsed.Invoke(this, EventArgs.Empty);
                 SetMilliseconds();
                 this.state = TimerItemStates.IsReady;
             }
