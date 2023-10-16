@@ -7,6 +7,8 @@
         public MainWindow()
         {
             InitializeComponent();
+            ToolTip toolTip = new ToolTip();
+            toolTip.SetToolTip(addTimerButton, "Create timer");
             this.Icon = Properties.Resources.icon;
             timerManager = new TimerManager();
             System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();

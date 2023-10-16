@@ -12,6 +12,11 @@ namespace Simple_Multi_Timer
         public TimerItemView(TimerItem timer)
         {
             InitializeComponent();
+            ToolTip toolTip = new ToolTip();
+            toolTip.SetToolTip(PauseResumeButton, "Pause/resume timer");
+            toolTip.SetToolTip(ResetButton, "Reset timer");
+            toolTip.SetToolTip(EditButton, "Edit timer");
+            toolTip.SetToolTip(DeleteButton, "Delete timer");
             this.timer = timer;
             timerNameLabel.Text = timer.GetName();
             timerTimeLabel.Text = timer.GetTimeString();

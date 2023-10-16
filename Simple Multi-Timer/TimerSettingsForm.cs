@@ -7,12 +7,18 @@
         private TimerSettingsForm()
         {
             InitializeComponent();
+            ToolTip toolTip = new ToolTip();
+            toolTip.SetToolTip(saveButton, "Save timer");
+            toolTip.SetToolTip(CancelButton, "Cancel");
             errorLabel.Text = "Time must be greater than 0.";
         }
 
         public TimerSettingsForm(TimerItem timer)
         {
             InitializeComponent();
+            ToolTip toolTip = new ToolTip();
+            toolTip.SetToolTip(saveButton, "Save changes");
+            toolTip.SetToolTip(CancelButton, "Discard changes");
             errorLabel.Text = "Time must be greater than 0.";
             this.timer = timer;
             timerNameTextBox.Text = timer.GetName();
@@ -24,6 +30,9 @@
         public TimerSettingsForm(MainWindow window)
         {
             InitializeComponent();
+            ToolTip toolTip = new ToolTip();
+            toolTip.SetToolTip(saveButton, "Create timer");
+            toolTip.SetToolTip(CancelButton, "Cancel");
             errorLabel.Text = "Time must be greater than 0.";
             this.window = window;
         }
